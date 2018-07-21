@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Level 1</title>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+   $("#myFile").on('change',function ()
+   {
+     var iSize = ($("#myFile")[0].files[0].size / 1024);
+     if (iSize / 1024 > 1)
+     {
+        if (((iSize / 1024) / 1024) > 1)
+        {
+            iSize = (Math.round(((iSize / 1024) / 1024) * 100) / 100);
+            $("#filesize").html( 'Filesize: ' + iSize + "Gb");
+        }
+        else
+        {
+            iSize = (Math.round((iSize / 1024) * 100) / 100)
+            $("#filesize").html( 'Filesize: ' + iSize + "Mb");
+        }
+     }
+     else
+     {
+        iSize = (Math.round(iSize * 100) / 100)
+        $("#filesize").html( 'Filesize: ' + iSize  + "kb [Level1 task]");
+     }   
+  });
+});
+
+</script>
+
+
+</head>
+<body>
+<center>
+    <h1> Droplets </h1>
+    <ul id="navigation">
+    {% for drop in droplets %}
+        <input type="radio" name="droplet" value="{{ drop[0] }}" checked="true"> {{ drop[0] }}, Speed: {{drop[1]}} <b>Kbps</b>, Left Space: {{drop[2]}} in <b>KiloBytes</b></br>
+	</br> 
+   {% endfor %}    
+
+	<br> <br> </br> </br>    
+
+    {% if droplets[0][1] >= droplets[1][1] %}
+     
+    Uploading to {{droplets[1][0]}} Based on available speed [Level2 task]
+
+     <form id='form1'  enctype="multipart/form-data" action="http://{{droplets[1][0]}}/upload" method="POST">
+  		<input type="file" name="the_file" id="myFile">
+  		<input type="submit">
+	</form>   
+    {% else %}
+    Uploading to {{droplets[0][1]}} based on available speed [Level2 task]
+	<form id='form1' enctype="multipart/form-data"  action="http://{{droplets[0][0]}}/upload" method="POST">
+                <input type="file" name="the_file" id="myFile">
+                <input type="submit">
+        </form>
+    {% endif %}
+   
+    
+    <div id="filesize">
+    </div>
+    {# a comment #}
+
+</center>
+
+</body>
+</html>
+
