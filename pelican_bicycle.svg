@@ -1,71 +1,69 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="400" height="400" fill="#e6f3ff"/>
+  <rect width="400" height="400" fill="#e8f4f8"/>
 
   <!-- Bicycle Frame -->
-  <line x1="100" y1="250" x2="300" y2="250" stroke="#333" stroke-width="3"/>
-  <line x1="200" y1="250" x2="200" y2="180" stroke="#333" stroke-width="3"/>
-  <line x1="200" y1="180" x2="120" y2="250" stroke="#333" stroke-width="3"/>
-  <line x1="200" y1="180" x2="280" y2="250" stroke="#333" stroke-width="3"/>
+  <line x1="150" y1="200" x2="250" y2="200" stroke="#333" stroke-width="4"/>
+  <line x1="200" y1="200" x2="200" y2="100" stroke="#333" stroke-width="4"/>
+  <line x1="150" y1="200" x2="200" y2="100" stroke="#333" stroke-width="4"/>
+  <line x1="250" y1="200" x2="200" y2="100" stroke="#333" stroke-width="4"/>
 
   <!-- Handlebars -->
-  <line x1="280" y1="250" x2="280" y2="200" stroke="#333" stroke-width="3"/>
-  <line x1="270" y1="200" x2="290" y2="200" stroke="#333" stroke-width="3"/>
+  <line x1="200" y1="100" x2="180" y2="80" stroke="#333" stroke-width="3"/>
+  <line x1="200" y1="100" x2="220" y2="80" stroke="#333" stroke-width="3"/>
+  <circle cx="175" cy="75" r="5" fill="#666"/>
+  <circle cx="225" cy="75" r="5" fill="#666"/>
+
+  <!-- Wheels -->
+  <circle cx="150" cy="200" r="40" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="150" cy="200" r="35" fill="none" stroke="#666" stroke-width="1" opacity="0.5"/>
+  <circle cx="150" cy="200" r="4" fill="#333"/>
+
+  <circle cx="250" cy="200" r="40" fill="none" stroke="#333" stroke-width="3"/>
+  <circle cx="250" cy="200" r="35" fill="none" stroke="#666" stroke-width="1" opacity="0.5"/>
+  <circle cx="250" cy="200" r="4" fill="#333"/>
 
   <!-- Seat -->
-  <ellipse cx="200" cy="170" rx="15" ry="8" fill="#8B4513" stroke="#333" stroke-width="2"/>
-
-  <!-- Pedals -->
-  <circle cx="200" cy="250" r="8" fill="#555" stroke="#333" stroke-width="2"/>
-  <line x1="200" y1="242" x2="200" y2="258" stroke="#333" stroke-width="2"/>
-  <line x1="192" y1="250" x2="208" y2="250" stroke="#333" stroke-width="2"/>
-
-  <!-- Left Wheel -->
-  <circle cx="120" cy="290" r="40" fill="none" stroke="#333" stroke-width="3"/>
-  <circle cx="120" cy="290" r="35" fill="none" stroke="#999" stroke-width="1"/>
-  <circle cx="120" cy="290" r="30" fill="none" stroke="#999" stroke-width="1"/>
-  <circle cx="120" cy="290" r="3" fill="#333"/>
-
-  <!-- Right Wheel -->
-  <circle cx="280" cy="290" r="40" fill="none" stroke="#333" stroke-width="3"/>
-  <circle cx="280" cy="290" r="35" fill="none" stroke="#999" stroke-width="1"/>
-  <circle cx="280" cy="290" r="30" fill="none" stroke="#999" stroke-width="1"/>
-  <circle cx="280" cy="290" r="3" fill="#333"/>
+  <ellipse cx="200" cy="95" rx="12" ry="8" fill="#8b4513"/>
 
   <!-- Pelican Body -->
-  <ellipse cx="200" cy="180" rx="35" ry="45" fill="#f5f5dc" stroke="#333" stroke-width="2"/>
-
-  <!-- Pelican Neck -->
-  <path d="M 200 135 Q 205 120 210 110" fill="none" stroke="#f5f5dc" stroke-width="20" stroke-linecap="round"/>
-  <path d="M 200 135 Q 205 120 210 110" fill="none" stroke="#333" stroke-width="1"/>
+  <ellipse cx="200" cy="85" rx="25" ry="20" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
 
   <!-- Pelican Head -->
-  <ellipse cx="215" cy="95" rx="18" ry="20" fill="#f5f5dc" stroke="#333" stroke-width="2"/>
+  <circle cx="220" cy="65" r="18" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
 
   <!-- Pelican Eye -->
-  <circle cx="225" cy="90" r="4" fill="#333"/>
-  <circle cx="226" cy="89" r="1.5" fill="white"/>
+  <circle cx="228" cy="60" r="3" fill="#333"/>
+  <circle cx="229" cy="59" r="1.5" fill="#fff"/>
 
-  <!-- Pelican Beak (the iconic pouch) -->
-  <ellipse cx="232" cy="100" rx="25" ry="12" fill="#FFB6C1" stroke="#333" stroke-width="2"/>
-  <path d="M 232 92 Q 245 100 232 108" fill="none" stroke="#333" stroke-width="1.5"/>
+  <!-- Pelican Beak (large pouch) -->
+  <path d="M 235 68 Q 265 70 270 75 Q 265 78 235 75 Z" fill="#ffa500" stroke="#333" stroke-width="2"/>
+  <path d="M 270 75 Q 275 73 278 75 Q 275 77 270 75 Z" fill="#ff8c00" stroke="#333" stroke-width="1"/>
+
+  <!-- Pelican Neck -->
+  <path d="M 225 80 Q 228 75 230 68" fill="none" stroke="#f5f5f5" stroke-width="8"/>
+  <path d="M 225 80 Q 228 75 230 68" fill="none" stroke="#333" stroke-width="1"/>
 
   <!-- Pelican Wing -->
-  <path d="M 175 160 Q 160 140 165 110 Q 170 130 175 160" fill="#dcdcdc" stroke="#333" stroke-width="1.5"/>
-  <path d="M 170 155 L 165 130 M 173 150 L 167 125 M 176 145 L 169 120" stroke="#333" stroke-width="1"/>
+  <path d="M 200 88 Q 180 75 175 95" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 198 90 Q 182 80 178 95" fill="none" stroke="#999" stroke-width="1.5" stroke-linecap="round"/>
 
-  <!-- Other Wing -->
-  <path d="M 225 160 Q 240 140 235 110 Q 230 130 225 160" fill="#dcdcdc" stroke="#333" stroke-width="1.5"/>
-  <path d="M 230 155 L 235 130 M 227 150 L 233 125 M 224 145 L 231 120" stroke="#333" stroke-width="1"/>
+  <!-- Pelican Legs on Pedals -->
+  <line x1="200" y1="105" x2="190" y2="180" stroke="#f5f5f5" stroke-width="4"/>
+  <line x1="200" y1="105" x2="210" y2="180" stroke="#f5f5f5" stroke-width="4"/>
 
-  <!-- Pelican Legs -->
-  <line x1="190" y1="220" x2="190" y2="250" stroke="#FF8C00" stroke-width="4" stroke-linecap="round"/>
-  <line x1="210" y1="220" x2="210" y2="250" stroke="#FF8C00" stroke-width="4" stroke-linecap="round"/>
+  <!-- Feet on Pedals -->
+  <ellipse cx="190" cy="185" rx="6" ry="8" fill="#ff6b35"/>
+  <ellipse cx="210" cy="185" rx="6" ry="8" fill="#ff6b35"/>
 
-  <!-- Pelican Feet -->
-  <ellipse cx="190" cy="253" rx="6" ry="4" fill="#FF8C00"/>
-  <ellipse cx="210" cy="253" rx="6" ry="4" fill="#FF8C00"/>
+  <!-- Pedals -->
+  <circle cx="190" cy="185" r="4" fill="#666"/>
+  <circle cx="210" cy="185" r="4" fill="#666"/>
 
-  <!-- Happy expression lines -->
-  <path d="M 220 85 Q 225 88 230 85" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Pedal cranks -->
+  <line x1="200" y1="200" x2="190" y2="185" stroke="#333" stroke-width="2"/>
+  <line x1="200" y1="200" x2="210" y2="185" stroke="#333" stroke-width="2"/>
+
+  <!-- Smile -->
+  <path d="M 235 75 Q 240 80 235 82" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
